@@ -56,12 +56,13 @@ body {
 }
 .word-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
 
 }
-
-.letter {
+.letter,
+.letterr {
     background-color: #3A579A;
     color: white;
     border-radius: 5px;
@@ -73,7 +74,25 @@ body {
     align-items: center;
     font-size: 24px;
 }
-.letterr{
+.letterr {
+    background-color: rgba(59, 59, 91, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+/* .letter { 
+    background-color: #3A579A;
+    color: white;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+} */
+/* .letterr{
     background-color: rgba(59, 59, 91, 0.5);
     border: 2px solid rgba(255, 255, 255 , 0.2);
     color: white;
@@ -87,7 +106,7 @@ body {
     align-items: center;
     font-size: 24px;
 
-}
+} */
 
 .keyboard {
     display: flex;
@@ -95,8 +114,28 @@ body {
     justify-content: center;
     background: transparent;
 }
+.key,
+.keyy {
+    background-color: #FFFFFF;
+    color: #3A579A;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.keyy {
+    background-color: rgba(63, 63, 124, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
 
-.key {
+/* .key {
     background-color: #FFFFFF;
     color: #3A579A;
     border-radius: 5px;
@@ -124,13 +163,30 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.2s;
-} 
+}  */
 
 .key:hover {
     background-color: grey;
 }
-
 @media (max-width: 600px) {
+    .key,
+    .keyy {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        font-size: 16px;
+    }
+
+    .letter,
+    .letterr {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        font-size: 20px;
+    }
+}
+
+/* @media (max-width: 600px) {
     .key {
         width: 30px;
         height: 30px;
@@ -144,4 +200,4 @@ body {
         margin: 3px;
         font-size: 20px;
     }
-}
+} */
