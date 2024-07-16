@@ -132,6 +132,7 @@ body {
 .keyy {
     background-color: rgba(63, 63, 124, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
     position: relative;
 }
 
